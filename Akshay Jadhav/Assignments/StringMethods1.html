@@ -1,0 +1,31 @@
+<html>
+	<head>
+	</head>
+	<body>
+	
+	<script>
+	function myfunction(){
+		var str = document.getElementById("p1").innerHTML;
+		var num = str.lastIndexOf("locate");
+		var str1 = str.search("locate");
+		var str2 = str.slice(9,15);
+		var str3 = str.substring(9,15);
+		var str4 = str.substr(9,6);
+		document.getElementById("p2").innerHTML = num;
+		document.getElementById("p3").innerHTML = str1;
+		document.getElementById("p4").innerHTML = str2;
+		document.getElementById("p5").innerHTML = str3;
+		document.getElementById("p6").innerHTML = str4;
+		}
+	</script>
+	
+	
+	<p id="p1">find the locate word from the given string</p>
+	<button type="button" onclick="myfunction()">Click  </button>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	<p id="p5"></p>
+	<p id="p6"></p>
+	</body>
+<html>

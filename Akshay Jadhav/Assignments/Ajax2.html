@@ -1,0 +1,51 @@
+<html>
+	<head>
+	</head>
+	<body>
+			<div id="demo">Please enter button</div>
+			<button type="button" onclick="loadDoc()">Enter</button>
+			
+			<script>
+				function loadDoc(){
+				alert("hello");
+				var xhttp = new XMLHttpRequest();
+				alert(xhttp);
+				xhttp.onreadystatechange = function(){
+				
+				if(xhttp.readyState == 4 && xhttp.status == 200){
+				myfunction(xhttp);
+				
+				}
+				
+				};
+				xhttp.open("GET","akshay.xml",true);
+				xhttp.send();
+				}
+				
+				function myfunction(xmlhttp){
+					var i;
+					var xmldoc=xmlhttp.responseXML;
+					var table="<table><tr><th>FirstName  </th><th>LastName  </th><th>RollNo  </th></tr><br>";
+					var x=xmldoc.getElementsByTagName("student");
+					//var b=x.length;
+					alert(x.length);
+					//if(b>0)
+					//{
+					for(i=0; i<x.length; i++)
+					{
+						table += "<tr><td>" + x[i].getElementsByTagName("firstname")[0].childNodes[0].nodeValue +
+						"</td><td>" + x[i].getElementsByTagName("lastname")[0].childNodes[0].nodeValue +
+						"</td><td>" +
+						x[i].getElementsByTagName("rollno")[0].childNodes[0].nodeValue +
+						"</td></tr><br>";
+					}
+					table +="</table>";
+					document.getElementById("demo").innerHTML = table;
+					//}
+					//else{
+					//	alert("Empty File");
+					//}
+				}
+			</script>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+	<hrad>
+	</head>
+	<body>
+	<script>
+		alert("Hello");
+			xhtml = new XMLHttpRequest();
+			var url="myfile2.php";
+			xhtml.onreadystatechange() = function() {
+				if(xhtml.readyState ==4 && xhtml.status == 200)
+				{
+				alert("lgkyj");
+					myfunction(xhtml.responseText);
+				}
+			}
+			xhtml.open("GET",url,true);
+			xhtml.send();
+			function myfunction(response){
+			
+			var obj=JSON.parse(response);
+			var i;
+			var out="<table><th><td>NAme</td><td>City</td><td>Country</td></th>";
+			for(i=0;i<obj.length;i++)
+			{
+				out+="<tr><td>" + obj[i].Name + "</td><td>" + obj[i].City + "</td><td>" + obj[i].Country "</td></tr>";
+			}
+				out += "</table>";
+				document.getElementById("demo").innerHTML = out;
+			}
+			
+		</script>
+	
+		<p>Information Table</p>
+		<p id="demo"></p>
+		
+	</body>
+</html>

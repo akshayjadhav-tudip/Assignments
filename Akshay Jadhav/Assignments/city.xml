@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<catalog>
+  <Maharashtra>
+    <city>Latur</city>	
+  </Maharashtra>
+  <Maharashtra>
+    <city>Pune</city>	
+  </Maharashtra>
+  <Maharashtra>
+    <city>Aurangabad</city>	
+  </Maharashtra>
+  <Maharashtra>
+    <city>Nanded</city>	
+  </Maharashtra>
+  <Maharashtra>
+    <city>Mumbai</city>	
+  </Maharashtra>
+  
+  <Andrapradesh>
+    <city>Haeidrabad</city>
+  </Andrapradesh>
+  <Andrapradesh>
+    <city>Vijapur</city>
+  </Andrapradesh>
+  
+  <Karnatka>
+    <city>Belgaon</city>
+  </Karnatka>
+   <Karnatka>
+    <city>Benglur</city>
+  </Karnatka>
+   <Karnatka>
+    <city>Bidar</city>
+  </Karnatka>
+
+
+  
+  
+</catalog>

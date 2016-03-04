@@ -1,0 +1,49 @@
+<html>
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="assignment.css">
+	<script src="assignments.js"></script>
+	</head>
+	<body>
+	<div id="header">
+		<h2>Student Information </h2>
+	</div>
+	<div id="butt">
+			<button id="addstud" type="button">Add</button>
+			<button id="deletestud" type="button">Delete</button>
+			<button id="updatestud" type="button">Update</button>
+			<button id="show" type="button" onclick="showstud()">Students List</button>
+		</div>
+		
+		<div id="adde">
+			Enter Name:<input id="firstName" type="text" placeholder="Enter FirstName"></input>
+			Last Name:<input id="lastName" type="text" placeholder="Enter LastName"></input>
+			Roll Number:<input id="rollNumber" type="number" placeholder="Enter RollNumber"></input>
+			Subjects:<input id="subjects" type="text" placeholder="Enter Subjects"></input>
+			<button id="addstudent" type="button" onclick="addstudent()">Add Student</button>
+		</div>
+		
+		<div id="delete">
+			Enter the Name : <input id="delelem" type="text" placeholder="Enter FirstName"></input>
+			<button id="deletedata" type="button" onclick="deletestudent()">Delete</button>
+		</div>
+		
+		<div id="update">
+					<input id="updatename" type="text" placeholder="Enter Name to update">
+					<br><br>
+				Enter Name:<input id="updatefirstName" type="text" placeholder="Enter FirstName"></input>
+			    Last Name:<input id="updatelastName" type="text" placeholder="Enter LastName"></input>
+				Roll Number:<input id="updaterollNumber" type="number" placeholder="Enter RollNumber"></input>
+			    Subjects:<input id="updatesubjects" type="text" placeholder="Enter Subjects"></input>
+				<button id="updatestudent" type="button" onclick="updatestudent()">Update</button>
+				
+		</div>
+	<div id="display">
+		
+		<center><p id="demo"></p></center>
+		
+	<div>
+		
+	</body>
+</html>

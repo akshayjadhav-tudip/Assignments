@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="jquery-ui.min.css">
+		<script src="external/jquery/jquery.js"></script>
+		<script src="jquery-ui.min.js"></script>
+	<style>
+		#selectable .ui-selecting {background : red;}
+		#selectable .ui-selected {background: blue;}
+		#selectable {list-style-type: none;margin:0;padding:0;}
+		#selectable li {margin :3px;padding:0.4em;font-size:1.4em;height:18px;}
+		
+	</style>
+	<script>
+		$(function(){
+			$("#selectable").selectable();
+		});
+	</script>
+	<head>
+	
+	<ol id="selectable">
+		<li class="ui-widget-content">Item1</li>
+		<li class="ui-widget-content">Item2</li>
+		<li class="ui-widget-content">Item3</li>
+		<li class="ui-widget-content">Item4</li>
+		<li class="ui-widget-content">Item5</li>
+		<li class="ui-widget-content">Item6</li>
+		<li class="ui-widget-content">Item7</li>
+		
+	</ol>
+	</head>
+</html>

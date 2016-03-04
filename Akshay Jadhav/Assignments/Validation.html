@@ -1,0 +1,64 @@
+<html>
+	<head>
+	</head>
+	<body>
+	<style>
+			div {
+					background-color:red;
+					width:350px;
+					font-size:30px;
+					
+					
+			}
+	</style>
+	
+	<script>
+		function myFunction(){
+		
+			var name=document.forms["form"]["name"].value;
+			var age=document.forms["form"]["age"].value;
+			
+			
+			if(name == "")
+			{
+				alert("Plese Enter Name");
+				return false;
+			}
+			if(document.forms["form"]["gender"].value == "" )
+			{
+				alert("Please  Select the gender .... ")
+			}
+			if(age>19 && age<31)
+			{
+				alert("Sucessfully Inserted ");
+				
+			}
+			else
+			{
+				alert("Plese Enter valid Age between 18 to 30");
+			}
+			
+		}
+	</script>
+	
+	
+		<center><div id="id1">
+		<center>Sign up</center>
+				<form name="form" onSubmit="myFunction()">
+					Name :<input type="text" name="name"></input><br><br>
+					Age  :  <input type="text" name="age"></input><br><br>
+					Gender:  Male<input type="radio"  name="gender" value="male">
+							 Female<input type="radio" name="gender" value="female"><br><br>
+					Select Stream :
+					<select name="stream">
+						<option value="CSE" selected>CSE</option>
+						<option value="EEP">EEP</option>
+						<option value="E & TC">E & TC</option>
+						<option value="Civil">Civil</option>
+					</select><br><br>
+					
+					<center><input type="submit" value="Submit"></center>
+				</form>
+		</div></center>
+	</body>
+</html>

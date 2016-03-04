@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="jquery-ui.min.css">
+		<script src="external/jquery/jquery.js"></script>
+		<script src="jquery-ui.min.js"></script>
+	<style>
+		
+		
+		#sortable {list-style-type: none;margin:0;padding:0;}
+		#sortable li {margin :3px;padding:0.4em;font-size:1.4em;height:18px;}
+		
+	</style>
+	<script>
+		$(function(){
+			$("#sortable").sortable();
+		});
+	</script>
+	<head>
+	
+	<ol id="sortable">
+		<li class="ui-widget-content">Item1</li>
+		<li class="ui-widget-content">Item2</li>
+		<li class="ui-widget-content">Item3</li>
+		<li class="ui-widget-content">Item4</li>
+		<li class="ui-widget-content">Item5</li>
+		<li class="ui-widget-content">Item6</li>
+		<li class="ui-widget-content">Item7</li>
+		
+	</ol>
+	</head>
+</html>

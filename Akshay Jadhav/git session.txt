@@ -1,0 +1,8 @@
+create repository
+
+push assignments
+
+git push origin master
+
+add collabarators
+

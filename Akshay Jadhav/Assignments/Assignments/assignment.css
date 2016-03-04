@@ -1,0 +1,53 @@
+#butt{
+	background-color : white;
+	text-align :center;
+	padding : 5px;
+	height : 50px;
+	border:solid black;
+	margin-top:50px;
+}
+#adde {
+	background-color : pink;
+	text-align :center;
+	padding : 5px;
+	height : 50px;
+	border:solid black;
+	
+}
+#delete {
+	background-color : pink;
+	text-align :center;
+	padding : 5px;
+	height : 50px;
+	border:solid black;
+	
+}
+
+#display {
+	background-color : pink;
+	text-align :center;
+	padding : 5px;
+	border:solid black;
+	color:black;
+	
+}
+#update {
+	
+	background-color : pink;
+	text-align :center;
+	padding : 5px;
+	height : 80px;
+	border:solid black;
+}
+#addstud {
+	
+	margin-top:10px;
+	padding-right:10px;
+	
+	
+}
+#header {
+			text-align:center;
+			color:red;
+	
+}

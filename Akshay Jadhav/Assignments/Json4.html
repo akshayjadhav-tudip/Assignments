@@ -1,0 +1,29 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<p> Click any link </p>
+		<p id="demo"></p>
+		
+		<script>
+			var ary = [{"display" : "JavaScript" ,"url" : "http://www.w3schools.com/js/default.asp"},
+							{"display" : "HTML" ,"url" : "http://www.w3schools.com/html/default.asp"},
+							{"display" : "Jquery" ,"url" : "http://www.w3schools.com/jquery/"},
+							{"display" : "JSON" ,"url" : "http://www.w3schools.com/json/default.asp"}];
+							alert("hello1");
+				myFunction(ary);
+				function myFunction(arry){
+				alert("hello");
+					var out="";
+					var i;
+					for(i=0;i<arry.length;i++)
+					{
+						out+= '<a href ="' + arry[i].url + '">' + arry[i].display + '</a></br>';
+					}
+					document.getElementById("demo").innerHTML = out;
+				}
+		
+		</script>
+	</body>
+
+</html>

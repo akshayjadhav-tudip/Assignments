@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<catalog>
+  <india>
+    <state>Maharashtra</state>
+  </india>
+<india>
+    <state>Karnatka</state>
+  </india>
+<india>
+    <state>Andrapradesh</state>
+  </india>
+
+
+  <uk>
+  <state>Loc-Angelis</state>
+  </uk>
+<uk>
+  <state>Washington</state>
+  </uk>
+
+  
+</catalog>

@@ -1,0 +1,123 @@
+<html>
+	<head>
+	</head>
+	<body>
+			<script>
+				function myState(){
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function(){
+				
+				if(xhttp.readyState == 4 && xhttp.status == 200){
+				myfunction(xhttp);
+				
+				}
+				
+				};
+				xhttp.open("GET","state.xml",true);
+				xhttp.send();
+				}
+				function myfunction(xmlhttp){
+					var i;
+					var xmldoc=xmlhttp.responseXML;
+					var sel="<select name='State'>";
+					var x=xmldoc.getElementsByTagName("india");
+					//var b=x.length;
+					//if(b>0)
+					//{
+					for(i=0; i<x.length; i++)
+					{
+						sel += "<option name='state' onclick='city()'>" + x[i].getElementsByTagName("state")[0].childNodes[0].nodeValue +
+						"</option>";
+					}
+					sel +="</select>";
+					document.getElementById("demo").innerHTML = sel;
+					
+				
+				}
+				
+				
+				
+				function myState1(){
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function(){
+				
+				if(xhttp.readyState == 4 && xhttp.status == 200){
+				myfunction1(xhttp);
+				
+				}
+				
+				};
+				xhttp.open("GET","state.xml",true);
+				xhttp.send();
+				}
+				function myfunction1(xmlhttp){
+					var i;
+					var xmldoc=xmlhttp.responseXML;
+					var sel="<select id='State' name='State'>";
+					var x=xmldoc.getElementsByTagName("uk");
+					//var b=x.length;
+					//if(b>0)
+					//{
+					for(i=0; i<x.length; i++)
+					{
+						sel += "<option name='State' onclick='city()'>" + x[i].getElementsByTagName("state")[0].childNodes[0].nodeValue +
+						"</option>";
+					}
+					sel +="</select>";
+					document.getElementById("demo").innerHTML = sel;
+					
+				
+				}
+				
+				
+				function city(){
+				
+					xmlhttp = new XMLHttpRequest();
+					xmlhttp.onreadystatechange = function(){
+						if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+						{
+							mycity(xmlhttp);
+						}
+					
+					};
+					xmlhttp.open("GET",city.xml,true);
+					xmlhttp.send();
+				
+				}
+				function mycity(xhttp){
+					var i;
+					var xmldoc = xhttp.responseXML;
+					var sel="<select name='State'>";
+					var state = document.getElementsById("State");
+					
+						for(i=0; i<x.length; i++)
+						{
+							sel += "<option name='City'>" + x[i].getElementsByTagName("city")[0].childNodes[0].nodeValue +
+							"</option>";
+						}
+					sel +="</select>";
+					document.getElementById("demo1").innerHTML = sel;
+					
+				}
+				
+				
+				
+			
+			</script>
+	
+	
+	
+	
+			<select name="country">
+			<option name="country" onclick="myState()" selected>India</option>
+			<option name="country" onclick="myState1()">UK</option>
+			<select>
+			
+			
+			<p id="demo"></p>
+			
+			<p id="demo1"></p>
+			
+			
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+	<head>
+
+	<style>
+		#signIn {
+				text-align :center;
+				background-color:green;
+				padding : 10px;
+		}
+	
+	</style>
+	
+	<script>
+			function myvalidation(){
+				alert("hello");
+					var fname = document.forms["form"]["firstName"].value;
+					var mname = document.forms["form"]["fatherName"].value;
+					var fname = document.forms["form"]["lastName"].value;
+					var age = document.forms["form"]["age"].value;
+					var email = document.forms["form"]["email"].value;
+					var branch = document.forms["form"]["branch"].value;
+					var gender = document.forms["form"]["gender"].value;
+					
+					if(fname == "")
+					{
+						alert("please enter FirstName");
+					}
+				
+			}
+	</script>
+	</head>
+	<body>
+		<div id="signIn">
+			<form id="form" onsubmit="myvalidation()">
+			Enter Name :<input id="firstName" type="text" placeholder="First Name"><span id="fname"></span>
+						<input id="fatherName" type="text" placeholder="Fathers Name"><span id="mname"></span>
+						<input id="lastName" type="text" placeholder="Last Name"><span id="lname"></span><br><br>
+			Enter Age : <input id="age" type="number" placeholder="Age"><span id="eage"><br><br>
+			Enter Email:<input id="email" type="email" placeholder="example@gmail.com"><span id="eemail"><br><br>
+			Select Branch : <select id="branch" placeholder="Select Branch">
+								<option selected>Select_Branch</option>
+								<option>Computer Sicence</option>
+								<option>Electronics & TC</option>
+								<option>Electrical</option>
+								<option>Civil</option>
+							</select><span id="sbranch"><br><br>
+			Gender:<input type="radio">Male<input type="radio">Female</input><span id="radio"><br><br>
+			<input type="submit" value="Submit"></input>
+			
+			
+		</div>
+	<body>
+</html>

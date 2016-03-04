@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="jquery-ui.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="external/jquery/jquery.js"></script>
+		<script src="jquery-ui.min.js"></script>
+			
+			<script>
+				  $(function() {
+					$( "#menu" ).menu();
+				  });
+		  </script>
+		  <style>
+		  .ui-menu { width: 150px; }
+		  </style>
+	</head>
+	<body>
+		 
+		<ul id="menu">
+		  <li class="ui-state-disabled">Aberdeen</li>
+		  <li>Ada</li>
+		  <li>Adamsville</li>
+		  <li>Addyston</li>
+		  <li>Delphi
+			<ul>
+			  <li class="ui-state-disabled">Ada</li>
+			  <li>Saarland</li>
+			  <li>Salzburg an der schönen Donau</li>
+			</ul>
+		  </li>
+		  <li>Saarland</li>
+		  <li>Salzburg
+			<ul>
+			  <li>Delphi
+				<ul>
+				  <li>Ada</li>
+				  <li>Saarland</li>
+				  <li>Salzburg</li>
+				</ul>
+			  </li>
+			  <li>Delphi
+				<ul>
+				  <li>Ada</li>
+				  <li>Saarland</li>
+				  <li>Salzburg</li>
+				</ul>
+			  </li>
+			  <li>Perch</li>
+			</ul>
+		  </li>
+		  <li class="ui-state-disabled">Amesville</li>
+		</ul>
+		 
+		 
+</body>
+</html>
